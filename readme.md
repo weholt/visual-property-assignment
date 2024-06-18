@@ -1,13 +1,6 @@
 # Visual Property Assignment
 ![Icon](icon.webp)
 
-**Project Name:** Visual Property Assignment  
-**Author:** Thomas Weholt  
-**GitHub Username:** [weholt](https://github.com/weholt)  
-**Email:** [thomas@weholt.org](mailto:thomas@weholt.org)  
-**Homepage:** [weholt.org](https://weholt.org)  
-**License:** AGPL
-
 ## Overview
 
 Visual Property Assignment is a proof-of-concept web-based tool designed to streamline the process of tagging HTML content for automatic generation of backend code. This project aims to enhance the efficiency of web development by providing a visual interface that allows users to assign properties to HTML elements, which can then be used to generate the corresponding backend code. 
@@ -110,8 +103,10 @@ For any questions or feedback, feel free to contact me at [thomas@weholt.org](ma
 
 ---
 
+**Author:** Thomas Weholt  
 **Homepage:** [weholt.org](https://weholt.org)  
 **GitHub:** [weholt](https://github.com/weholt)  
 **Email:** [thomas@weholt.org](mailto:thomas@weholt.org)
+**License:** AGPL
 
 ---
