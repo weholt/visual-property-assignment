@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Property Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/simplex/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <a class="navbar-brand mx-2" href="#"><img src="icon.webp" style="height: 30px;"> Visual Property Assignment</a>
+        <div class="ms-auto d-flex">
+            <input type="file" id="fileInput" style="display:none;">
+            <button id="loadButton" class="btn btn-secondary ms-2">Load</button>
+            <button id="saveButton" class="btn btn-secondary ms-2">Save</button>
+            <button id="generateButton" class="btn btn-primary ms-2 mx-2">Generate</button>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8" id="parsedHtml">
+                <iframe id="iframe" class="w-100" style="height: 100vh; border: none;"></iframe>
+            </div>
+            <div class="col-md-4" id="contentForm">
+                <div class="mt-3">
+                    <div class="tabs">
+                        <div class="tab-links d-flex">
+                            <div class="tab-link btn btn-secondary mb-2 flex-fill" data-tab="field-input">Field Input
+                            </div>
+                            <div class="tab-link btn btn-secondary mb-2 flex-fill" data-tab="meta">Meta</div>
+                            <div class="tab-link btn btn-secondary mb-2 flex-fill" data-tab="images">Images</div>
+                            <div class="tab-link btn btn-secondary mb-2 flex-fill" data-tab="grouping">Grouping</div>
+                        </div>
+                        <div class="tab" id="tab-field-input">
+                            <form id="dynamicForm" class="mb-3">
+                                <div class="form-group"></div>
+                            </form>
+                            <form>
+                                <div id="dynamicInputs">
+                                    <!-- Additional form inputs will be dynamically generated here based on the field type -->
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab" id="tab-meta">
+                            <form id="metaForm">
+                                <!-- Meta fields will be placed here -->
+                            </form>
+                        </div>
+                        <div class="tab" id="tab-images">
+                            <!-- Image fields will be placed here -->
+                        </div>
+                        <div class="tab" id="tab-grouping">
+                            <div class="form-group">
+                                <label for="parentDropdown">Visualize Parent:</label>
+                                <select id="parentDropdown" class="form-control">
+                                    <!-- Parent elements will be dynamically generated here -->
+                                </select>
+                            </div>
+                            <div id="selectionCount">Selected Elements: 0</div>
+                            <button id="groupButton" class="btn btn-warning mt-2">Group Selected</button>
+                            <button id="visualizeButton" class="btn btn-info mt-2">Visualize Selected</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="utilities.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
